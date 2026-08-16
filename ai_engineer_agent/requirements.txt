@@ -1,0 +1,10 @@
+cd /storage/emulated/0/ai_engineer_agent
+cat > requirements.txt << 'EOF'
+aiogram==3.4.1
+openai==0.28.0
+psutil==5.9.8
+aiofiles==23.2.1
+python-dotenv==1.0.1
+pytest==8.0.0
+pydantic==2.7.0
+EOF

@@ -1,0 +1,28 @@
+# مفاتيح API
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
+DEV_BOT_TOKEN=1234567890:ABCdefghijklmnopqrstuvwxyz
+
+# مسار مشروع البوت
+PROJECT_PATH=/home/user/telegram_whatsapp_link_extractor
+
+# مستويات الاستقلالية (safe / moderate / full)
+AUTO_FIX_LEVEL=safe
+
+# إعدادات المراقبة
+HEALTH_CHECK_INTERVAL=60
+MAX_AUTO_FIX_ATTEMPTS=3
+
+# إعدادات النموذج
+AI_MODEL=gpt-4
+AI_MAX_TOKENS=4000
+AI_TEMPERATURE=0.1
+
+# إعدادات Git
+GIT_ENABLED=true
+GIT_AUTO_COMMIT=true
+
+# إعدادات الاختبارات
+TEST_TIMEOUT=30
+
+# مستوى السجل
+LOG_LEVEL=INFO

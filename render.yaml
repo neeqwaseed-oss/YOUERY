@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: telegram-link-extractor-bot
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python -m app.main
+    envVars:
+      - key: BOT_TOKEN
+        value: your_bot_token_here
+      - key: API_ID
+        value: your_api_id_here
+      - key: API_HASH
+        value: your_api_hash_here
+      - key: SESSION_NAME
+        value: userbot_session
+      - key: DATABASE_PATH
+        value: data/app.db
+      - key: LOG_LEVEL
+        value: INFO
+    healthCheckPath: /
+    autoDeploy: true
+
+  - type: worker
+    name: ai-engineer-agent
+    env: python
+    buildCommand: |
+      cd /opt/render/project/src/ai_engineer_agent
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: cd /opt/render/project/src/ai_engineer_agent && python main.py
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your_openai_api_key_here
+      - key: DEV_BOT_TOKEN
+        value: your_dev_bot_token_here
+      - key: PROJECT_PATH
+        value: /opt/render/project/src
+      - key: AUTO_FIX_LEVEL
+        value: safe
+      - key: HEALTH_CHECK_INTERVAL
+        value: 60
+      - key: MAX_AUTO_FIX_ATTEMPTS
+        value: 3
+      - key: AI_MODEL
+        value: gpt-4
+      - key: LOG_LEVEL
+        value: INFO

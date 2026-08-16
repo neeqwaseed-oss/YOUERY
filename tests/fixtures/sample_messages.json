@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "text": "Check out this group: https://t.me/testgroup1",
+    "entities": null,
+    "date": "2024-01-01T10:00:00",
+    "from_id": 12345
+  },
+  {
+    "id": 2,
+    "text": "Join our channel: https://t.me/testchannel1",
+    "entities": null,
+    "date": "2024-01-01T10:01:00",
+    "from_id": 12345
+  },
+  {
+    "id": 3,
+    "text": "Here is an invite: https://t.me/+ABC123",
+    "entities": null,
+    "date": "2024-01-01T10:02:00",
+    "from_id": 12345
+  },
+  {
+    "id": 4,
+    "text": "WhatsApp group: https://chat.whatsapp.com/XYZ789",
+    "entities": null,
+    "date": "2024-01-01T10:03:00",
+    "from_id": 12345
+  },
+  {
+    "id": 5,
+    "text": "Check this website: https://example.com",
+    "entities": null,
+    "date": "2024-01-01T10:04:00",
+    "from_id": 12345
+  },
+  {
+    "id": 6,
+    "text": "Personal account: https://t.me/user123",
+    "entities": null,
+    "date": "2024-01-01T10:05:00",
+    "from_id": 12345
+  },
+  {
+    "id": 7,
+    "text": "Bot: https://t.me/testbot",
+    "entities": null,
+    "date": "2024-01-01T10:06:00",
+    "from_id": 12345
+  },
+  {
+    "id": 8,
+    "text": "Duplicate group: https://t.me/testgroup1",
+    "entities": null,
+    "date": "2024-01-01T10:07:00",
+    "from_id": 12345
+  },
+  {
+    "id": 9,
+    "text": "WhatsApp contact: https://wa.me/966500000000",
+    "entities": null,
+    "date": "2024-01-01T10:08:00",
+    "from_id": 12345
+  },
+  {
+    "id": 10,
+    "text": "Another website: https://example.org",
+    "entities": null,
+    "date": "2024-01-01T10:09:00",
+    "from_id": 12345
+  }
+]
